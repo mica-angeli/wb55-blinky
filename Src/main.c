@@ -99,15 +99,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "EndlessLoop"
   while (1)
   {
-    /* USER CODE END WHILE */
     HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
     HAL_Delay(500);
     HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
     HAL_Delay(500);
+
+    /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
   }
+#pragma clang diagnostic pop
   /* USER CODE END 3 */
 }
 

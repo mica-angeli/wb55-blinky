@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=/Users/ricardo/Developer/stm32blinky/Inc
+HeaderPath=/Users/ricardo/Developer/wb55-blinky/Inc
 HeaderFiles=stm32wbxx_it.h;stm32wbxx_hal_conf.h;main.h;
-SourcePath=/Users/ricardo/Developer/stm32blinky/Src
+SourcePath=/Users/ricardo/Developer/wb55-blinky/Src
 SourceFiles=stm32wbxx_it.c;stm32wbxx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
