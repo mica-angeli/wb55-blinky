@@ -27,20 +27,24 @@ SET(COMMON_FLAGS
     "-mcpu=cortex-m4 ${FPU_FLAGS} -mthumb -mthumb-interwork -ffunction-sections -fdata-sections \
     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs")
 
-SET(CMAKE_CXX_FLAGS_INIT "${COMMON_FLAGS} -std=c++11")
+SET(CMAKE_CXX_FLAGS_INIT "${COMMON_FLAGS} -std=c++17")
 SET(CMAKE_C_FLAGS_INIT "${COMMON_FLAGS} -std=gnu11")
 SET(CMAKE_EXE_LINKER_FLAGS_INIT "-Wl,-gc-sections,--print-memory-usage -T ${LINKER_SCRIPT}")
 
 PROJECT(wb55-blinky C CXX ASM)
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 #add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
 add_definitions(-DUSE_HAL_DRIVER -DSTM32WB55xx)
 
 file(GLOB_RECURSE SOURCES "startup/*.*" "Drivers/*.*" "Src/*.*")
 
-include_directories(Inc Drivers/STM32WBxx_HAL_Driver/Inc Drivers/STM32WBxx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32WBxx/Include Drivers/CMSIS/Include)
+set(DRIVER_INCLUDES Inc Drivers/STM32WBxx_HAL_Driver/Inc Drivers/STM32WBxx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32WBxx/Include Drivers/CMSIS/Include)
+list(REMOVE_ITEM DRIVER_INCLUDES Inc)
+
+include_directories(SYSTEM ${DRIVER_INCLUDES})
+include_directories(Inc)
 
 add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
 
