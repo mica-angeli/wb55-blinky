@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="wb55-blinky" targetName="wb55-blinky.elf" />
@@ -20,8 +38,25 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="EmbeddedSvdWindowState">
+    <option name="columnWidths">
+      <list>
+        <option value="237" />
+        <option value="102" />
+        <option value="1242" />
+      </list>
+    </option>
+    <option name="columnOrder">
+      <list>
+        <option value="Name" />
+        <option value="Value" />
+        <option value="Description" />
+      </list>
+    </option>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="ProjectId" id="1bMTq3TVJ3AwleMzeWfdbwpvONA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,18 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
-  </component>
-  <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD wb55-blinky">
-    <configuration name="wb55-blinky.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="wb55-blinky" TARGET_NAME="wb55-blinky.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="wb55-blinky" RUN_TARGET_NAME="wb55-blinky.elf">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.wb55-blinky.elf" />
-      <item itemvalue="OpenOCD Download &amp; Run.OCD wb55-blinky" />
-    </list>
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -63,30 +87,65 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="139" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588447249524">
+    <state x="139" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588458665654">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="139" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.974@0.23.1680.974" timestamp="1588447249524" />
-    <state width="1638" height="263" key="GridCell.Tab.0.bottom" timestamp="1588447396401">
+    <state x="139" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.974@0.23.1680.974" timestamp="1588458665654" />
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom" timestamp="1588459139719">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="263" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1588447396401" />
-    <state width="1638" height="263" key="GridCell.Tab.0.center" timestamp="1588447396400">
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1588459139719" />
+    <state width="1638" height="324" key="GridCell.Tab.0.center" timestamp="1588459139716">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="263" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1588447396400" />
-    <state width="1638" height="263" key="GridCell.Tab.0.left" timestamp="1588447396399">
+    <state width="1638" height="324" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1588459139716" />
+    <state width="1638" height="324" key="GridCell.Tab.0.left" timestamp="1588459139715">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="263" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1588447396399" />
-    <state width="1638" height="263" key="GridCell.Tab.0.right" timestamp="1588447396401">
+    <state width="1638" height="324" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1588459139715" />
+    <state width="1638" height="324" key="GridCell.Tab.0.right" timestamp="1588459139718">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="263" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1588447396401" />
-    <state x="340" y="149" key="SettingsEditor" timestamp="1588446423321">
+    <state width="1638" height="324" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1588459139718" />
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1588459139722">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="340" y="149" key="SettingsEditor/0.23.1680.974@0.23.1680.974" timestamp="1588446423321" />
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom/0.23.1680.974@0.23.1680.974" timestamp="1588459139722" />
+    <state width="1638" height="324" key="GridCell.Tab.1.center" timestamp="1588459139721">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.center/0.23.1680.974@0.23.1680.974" timestamp="1588459139721" />
+    <state width="1638" height="324" key="GridCell.Tab.1.left" timestamp="1588459139720">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.left/0.23.1680.974@0.23.1680.974" timestamp="1588459139720" />
+    <state width="1638" height="324" key="GridCell.Tab.1.right" timestamp="1588459139721">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.1.right/0.23.1680.974@0.23.1680.974" timestamp="1588459139721" />
+    <state width="1638" height="324" key="GridCell.Tab.2.bottom" timestamp="1588459139724">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.2.bottom/0.23.1680.974@0.23.1680.974" timestamp="1588459139724" />
+    <state width="1638" height="324" key="GridCell.Tab.2.center" timestamp="1588459139723">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.2.center/0.23.1680.974@0.23.1680.974" timestamp="1588459139723" />
+    <state width="1638" height="324" key="GridCell.Tab.2.left" timestamp="1588459139723">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.2.left/0.23.1680.974@0.23.1680.974" timestamp="1588459139723" />
+    <state width="1638" height="324" key="GridCell.Tab.2.right" timestamp="1588459139723">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state width="1638" height="324" key="GridCell.Tab.2.right/0.23.1680.974@0.23.1680.974" timestamp="1588459139723" />
+    <state x="340" y="149" key="SettingsEditor" timestamp="1588458497989">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="340" y="149" key="SettingsEditor/0.23.1680.974@0.23.1680.974" timestamp="1588458497989" />
   </component>
 </project>

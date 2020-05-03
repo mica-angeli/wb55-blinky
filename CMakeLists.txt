@@ -28,10 +28,11 @@ SET(COMMON_FLAGS
     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs")
 
 SET(CMAKE_CXX_FLAGS_INIT "${COMMON_FLAGS} -std=c++11")
-SET(CMAKE_C_FLAGS_INIT "${COMMON_FLAGS} -std=gnu99")
+SET(CMAKE_C_FLAGS_INIT "${COMMON_FLAGS} -std=gnu11")
 SET(CMAKE_EXE_LINKER_FLAGS_INIT "-Wl,-gc-sections,--print-memory-usage -T ${LINKER_SCRIPT}")
 
 PROJECT(wb55-blinky C CXX ASM)
+set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 11)
 
 #add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
@@ -41,7 +42,7 @@ file(GLOB_RECURSE SOURCES "startup/*.*" "Drivers/*.*" "Src/*.*")
 
 include_directories(Inc Drivers/STM32WBxx_HAL_Driver/Inc Drivers/STM32WBxx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32WBxx/Include Drivers/CMSIS/Include)
 
-add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
+add_executable(${PROJECT_NAME}.elf ${SOURCES} Src/app.cpp ${LINKER_SCRIPT})
 
 set(CMAKE_EXE_LINKER_FLAGS
     "${CMAKE_EXE_LINKER_FLAGS} -Wl,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map")

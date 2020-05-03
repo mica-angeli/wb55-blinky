@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,7 +94,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
   /* USER CODE BEGIN 2 */
-
+  setup();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,11 +103,7 @@ int main(void)
 #pragma ide diagnostic ignored "EndlessLoop"
   while (1)
   {
-    HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_SET);
-    HAL_Delay(500);
-    HAL_GPIO_WritePin(GPIOB, LD2_Pin, GPIO_PIN_RESET);
-    HAL_Delay(500);
-
+    loop();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
